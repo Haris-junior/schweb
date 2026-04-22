@@ -3,9 +3,9 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Asomdwee Ntonton Som-School</title>
-<link rel="icon" type="image/jpeg" href="logo.jpg"/>
-<link rel="shortcut icon" type="image/jpeg" href="logo.jpg"/>
+<title>Asomdwee Ntonton Som School</title>
+<link rel="icon" type="image/jpeg" href="pics/logo.jpg"/>
+<link rel="shortcut icon" type="image/jpeg" href="pics/logo.jpg"/>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
 <style>
 :root{
@@ -79,24 +79,24 @@ nav.scrolled{background:var(--nav-bg-scrolled);}
 /* HERO */
 .hero{position:relative;width:100%;height:100vh;overflow:hidden;display:flex;align-items:center;justify-content:center;}
 /* Desktop hero images */
-.hero .slide.d1{background-image:url('pic6.jpg');}
-.hero .slide.d2{background-image:url('pic15.jpg');}
-.hero .slide.d3{background-image:url('pic16.jpg');}
-.hero .slide.d4{background-image:url('pic14.jpg');}
-.hero .slide.d5{background-image:url('pic18.jpg');}
-.hero .slide.d6{background-image:url('pic19.jpg');}
-.hero .slide.d7{background-image:url('pic20.jpg');}
-.hero .slide.d8{background-image:url('pic3.JPG');}
-.hero .slide.d10{background-image:url('pic23.jpg');}
-.hero .slide.d11{background-image:url('pic24.jpg');}
-.hero .slide.d12{background-image:url('pic26.jpg');}
+.hero .slide.d1{background-image:url('pics/pic6.JPG');}
+.hero .slide.d2{background-image:url('pics/pic15.JPG');}
+.hero .slide.d3{background-image:url('pics/pic16.JPG');}
+.hero .slide.d4{background-image:url('pics/pic14.JPG');}
+.hero .slide.d5{background-image:url('pics/pic18.JPG');}
+.hero .slide.d6{background-image:url('pics/pic19.JPG');}
+.hero .slide.d7{background-image:url('pics/pic20.JPG');}
+.hero .slide.d8{background-image:url('pics/pic3.JPG');}
+.hero .slide.d10{background-image:url('pics/pic23.JPG');}
+.hero .slide.d11{background-image:url('pics/pic24.JPG');}
+.hero .slide.d12{background-image:url('pics/pic26.JPG');}
 /* Mobile hero images */
 @media(max-width:768px){
-  .hero .slide.d1{background-image:url('pic5.jpg');}
-  .hero .slide.d2{background-image:url('nsy2.jpg');}
-  .hero .slide.d3{background-image:url('KOF.JPG');}
-  .hero .slide.d4{background-image:url('opoku.JPG');}
-  .hero .slide.d5{background-image:url('kk.jpg');}
+  .hero .slide.d1{background-image:url('pics/pic5.JPG');}
+  .hero .slide.d2{background-image:url('pics/nsy2.jpg');}
+  .hero .slide.d3{background-image:url('pics/KOF.jpg');}
+  .hero .slide.d4{background-image:url('pics/opoku.JPG');}
+  .hero .slide.d5{background-image:url('pics/kk.jpg');}
   .hero .slide.d6,.hero .slide.d7,.hero .slide.d8,
   .hero .slide.d9,.hero .slide.d10,.hero .slide.d11,
   .hero .slide.d12{display:none;}
@@ -135,9 +135,9 @@ nav.scrolled{background:var(--nav-bg-scrolled);}
 .pillars-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;max-width:1200px;margin:0 auto;}
 .p-card{padding:34px 26px;transition:transform .35s;}
 .p-card:hover{transform:translateY(-6px);}
-.p-icon{width:50px;height:50px;border-radius:13px;background:linear-gradient(135deg,var(--af-blue-deep),var(--af-blue));display:flex;align-items:center;justify-content:center;margin-bottom:20px;box-shadow:0 4px 16px rgba(93,138,168,.26);}
-.p-icon svg{width:23px;height:23px;color:#fff;}
-.p-card h3{font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-weight:600;color:var(--text-primary);margin-bottom:11px;}
+.p-icon{width:50px;height:50px;border-radius:13px;background:linear-gradient(135deg,var(--af-blue-deep),var(--af-blue));display:flex;align-items:center;justify-content:center;margin-bottom:16px;flex-shrink:0;}
+.p-icon svg{width:22px;height:22px;color:#fff;}
+.p-card h3{font-family:'Cormorant Garamond',serif;font-size:1.1rem;font-weight:600;color:var(--text-primary);margin-bottom:10px;}
 .p-card p{font-size:.87rem;line-height:1.75;color:var(--text-secondary);font-weight:300;}
 
 /* SPORTS */
@@ -148,8 +148,21 @@ nav.scrolled{background:var(--nav-bg-scrolled);}
 .sports-txt h2{font-family:'Cormorant Garamond',serif;font-size:clamp(1.8rem,3vw,2.4rem);font-weight:300;color:var(--text-primary);margin-bottom:18px;line-height:1.28;}
 .sports-txt p{font-size:.93rem;line-height:1.82;color:var(--text-secondary);margin-bottom:14px;font-weight:300;}
 
+/* FOOTER */
+footer{padding:96px 48px 48px;background:var(--footer-bg);border-top:1px solid var(--divider);position:relative;overflow:hidden;}
+footer::before{content:'';position:absolute;inset:0;background:radial-gradient(circle at 50% 100%,rgba(93,138,168,.06) 0%,transparent 70%);}
+.ft-in{max-width:1200px;margin:0 auto;position:relative;z-index:2;}
+.ft-top{display:grid;grid-template-columns:1.5fr 1fr 1.2fr;gap:80px;margin-bottom:80px;}
+.ft-brand{max-width:360px;}
+.ft-brand .nav-brand{margin-bottom:24px;}
+.ft-brand p{font-size:.93rem;line-height:1.8;color:var(--text-secondary);font-weight:300;}
+.ft-col h4{font-size:.72rem;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--af-blue);margin-bottom:28px;}
+.ft-col a{display:block;font-size:.92rem;color:var(--text-secondary);text-decoration:none;margin-bottom:14px;transition:color .3s;cursor:pointer;font-weight:300;}
+.ft-col a:hover{color:var(--text-primary);}
+.ft-btm{padding-top:32px;border-top:1px solid var(--divider);display:flex;align-items:center;justify-content:space-between;font-size:.78rem;color:var(--text-muted);font-weight:300;}
+
 /* ABOUT HERO */
-.ab-hero{min-height:100vh;padding-top:76px;background:linear-gradient(rgba(10,15,20,0.6), rgba(10,15,20,0.6)), url('sch.jpg') top center/cover fixed no-repeat;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;position:relative;overflow:hidden;}
+.ab-hero{min-height:100vh;padding-top:76px;background:linear-gradient(rgba(10,15,20,0.6), rgba(10,15,20,0.6)), url('pics/sch.jpg') top center/cover fixed no-repeat;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;position:relative;overflow:hidden;}
 .ab-hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 20% 60%,rgba(93,138,168,.12) 0%,transparent 55%),radial-gradient(ellipse at 80% 30%,rgba(93,138,168,.08) 0%,transparent 45%);}
 .ab-hero::after{content:'';position:absolute;inset:0;background-image:linear-gradient(rgba(93,138,168,.03) 1px,transparent 1px),linear-gradient(90deg,rgba(93,138,168,.03) 1px,transparent 1px);background-size:55px 55px;}
 .ab-hero-in{position:relative;z-index:2;padding:60px 48px;max-width:880px;}
@@ -184,6 +197,18 @@ nav.scrolled{background:var(--nav-bg-scrolled);}
 .r-pill h4{font-family:'Cormorant Garamond',serif;font-size:1rem;font-weight:600;color:var(--text-primary);margin-bottom:5px;}
 .r-pill p{font-size:.76rem;line-height:1.6;color:var(--text-muted);}
 
+/* BOARDING FACILITIES */
+.boarding-sec{padding:68px 0;border-top:1px solid var(--divider);border-bottom:1px solid var(--divider);margin-bottom:68px;}
+.boarding-hdr h2{font-family:'Cormorant Garamond',serif;font-size:clamp(1.7rem,3vw,2.3rem);font-weight:300;color:var(--text-primary);margin-bottom:8px;line-height:1.2;}
+.boarding-intro{font-size:.93rem;line-height:1.85;color:var(--text-secondary);margin-bottom:32px;font-weight:300;max-width:800px;}
+.boarding-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;margin-bottom:32px;}
+.dorm-section h3{font-family:'Cormorant Garamond',serif;font-size:1.3rem;font-weight:600;color:var(--text-primary);margin-bottom:16px;}
+.dorm-section p{font-size:.91rem;line-height:1.8;color:var(--text-secondary);margin-bottom:20px;font-weight:300;}
+.dorm-gallery{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;}
+.dorm-img-placeholder{width:100%;aspect-ratio:4/3;border-radius:12px;background:var(--surface);border:1px solid var(--surface-border);display:flex;align-items:center;justify-content:center;color:var(--text-muted);font-size:.85rem;text-align:center;overflow:hidden;cursor:pointer;transition:transform .35s,box-shadow .35s;box-shadow:var(--card-shadow);}
+.dorm-img-placeholder:hover{transform:scale(1.02);box-shadow:0 16px 48px rgba(0,0,0,.35);}
+.dorm-img-placeholder img{width:100%;height:100%;object-fit:contain;display:block;}
+
 /* VALUES */
 .ab-vals h2{font-family:'Cormorant Garamond',serif;font-size:clamp(1.8rem,3vw,2.4rem);font-weight:300;color:var(--text-primary);margin-bottom:38px;text-align:center;}
 .vals-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-bottom:60px;}
@@ -210,6 +235,25 @@ nav.scrolled{background:var(--nav-bg-scrolled);}
 .tl-yr{font-size:.66rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--af-blue);margin-bottom:6px;}
 .tl-item h3{font-family:'Cormorant Garamond',serif;font-size:1.12rem;font-weight:600;color:var(--text-primary);margin-bottom:8px;}
 .tl-item p{font-size:.86rem;line-height:1.72;color:var(--text-secondary);font-weight:300;}
+
+/* GALLERY */
+.gal-hero{min-height:50vh;padding-top:76px;background:var(--bg2);display:flex;flex-direction:column;justify-content:center;position:relative;overflow:hidden;padding-left:10vw;padding-right:10vw;}
+.gal-hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 0% 100%,rgba(93,138,168,.14) 0%,transparent 55%);}
+.gal-hero-in{position:relative;z-index:2;max-width:560px;}
+.gal-intro{font-size:.95rem;line-height:1.85;color:var(--text-secondary);margin-bottom:24px;font-weight:300;max-width:800px;}
+.gal-intro-title{font-family:'Cormorant Garamond',serif;font-size:clamp(2.2rem,5vw,3.7rem);font-weight:300;color:var(--text-primary);line-height:1.2;margin-bottom:16px;}
+.gal-body{padding:88px 48px;background:var(--bg);}
+.gal-body-in{max-width:1400px;margin:0 auto;}
+.gal-intro-text{font-size:.95rem;line-height:1.85;color:var(--text-secondary);margin-bottom:48px;font-weight:300;max-width:900px;}
+.gal-masonry{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:16px;grid-auto-rows:250px;}
+
+/* MODAL */
+.modal{display:none;position:fixed;inset:0;background:rgba(5,10,15,.94);z-index:2000;align-items:center;justify-content:center;backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);padding:20px;}
+.modal.active{display:flex;}
+.modal-content{position:relative;display:flex;align-items:center;justify-content:center;max-width:100vw;max-height:100vh;}
+.modal-content img{display:block;max-width:100vw;max-height:100vh;width:auto;height:auto;object-fit:contain;border-radius:10px;box-shadow:0 24px 80px rgba(0,0,0,.75);}
+.modal-close{position:fixed;top:20px;right:24px;width:44px;height:44px;background:rgba(255,255,255,.10);border:1px solid rgba(255,255,255,.15);border-radius:50%;cursor:pointer;display:flex;align-items:center;justify-content:center;color:#fff;font-size:22px;transition:background .25s,transform .25s;z-index:2001;}
+.modal-close:hover{background:rgba(255,255,255,.20);transform:rotate(90deg);}
 
 /* CONTACT HERO */
 .ct-hero{min-height:50vh;padding-top:76px;background:var(--bg2);display:flex;flex-direction:column;justify-content:center;position:relative;overflow:hidden;padding-left:10vw;padding-right:10vw;}
@@ -244,49 +288,161 @@ nav.scrolled{background:var(--nav-bg-scrolled);}
 .ct-val{font-size:.91rem;color:var(--text-secondary);line-height:1.55;font-weight:300;}
 .ct-val a{color:var(--af-blue-light);text-decoration:none;transition:color .2s;}
 .ct-val a:hover{color:var(--text-primary);}
-.map-ph{width:100%;height:250px;border-radius:18px;border:1px solid var(--surface-border);background:var(--bg2);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:9px;color:var(--text-muted);font-size:.86rem;letter-spacing:.06em;position:relative;overflow:hidden;}
-.map-ph::before{content:'';position:absolute;inset:0;background-image:linear-gradient(rgba(93,138,168,.04) 1px,transparent 1px),linear-gradient(90deg,rgba(93,138,168,.04) 1px,transparent 1px);background-size:36px 36px;}
-.map-ph svg{width:34px;height:34px;color:var(--af-blue);opacity:.52;}
+.map-ph{width:100%;height:450px;border-radius:18px;border:1px solid var(--surface-border);overflow:hidden;position:relative;}
+.map-ph iframe{position:absolute;inset:0;width:100%;height:100%;border:0;display:block;}
 
-/* FOOTER */
-footer{padding:54px 48px 34px;background:var(--footer-bg);border-top:1px solid rgba(93,138,168,.13);}
-.ft-in{max-width:1200px;margin:0 auto;}
-.ft-top{display:grid;grid-template-columns:2fr 1fr 1fr;gap:42px;padding-bottom:42px;border-bottom:1px solid rgba(255,255,255,.07);margin-bottom:26px;}
-.ft-brand p{font-size:.83rem;color:rgba(255,255,255,.37);line-height:1.8;margin-top:13px;max-width:280px;font-weight:300;}
-.ft-col h4{font-size:.66rem;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--af-blue);margin-bottom:14px;}
-.ft-col a{display:block;font-size:.83rem;color:rgba(255,255,255,.40);text-decoration:none;margin-bottom:10px;font-weight:300;transition:color .2s;cursor:pointer;}
-.ft-col a:hover{color:rgba(255,255,255,.76);}
-.ft-btm{display:flex;align-items:center;justify-content:space-between;font-size:.73rem;color:rgba(255,255,255,.20);font-weight:300;}
-
-/* ANIM */
-@keyframes fadeUp{from{opacity:0;transform:translateY(22px);}to{opacity:1;transform:translateY(0);}}
+/* ANIMATIONS */
+@keyframes fadeUp{from{opacity:0;transform:translateY(16px);}to{opacity:1;transform:translateY(0);}}
 @keyframes spin-slow{from{transform:rotate(0deg);}to{transform:rotate(360deg);}}
-.reveal{opacity:0;transform:translateY(26px);transition:opacity .7s ease,transform .7s ease;}
+.reveal{opacity:0;transform:translateY(20px);transition:opacity .6s ease,transform .6s ease;}
 .reveal.visible{opacity:1;transform:translateY(0);}
-.r1{transition-delay:.1s;}.r2{transition-delay:.2s;}.r3{transition-delay:.3s;}.r4{transition-delay:.4s;}
+.reveal.r1{transition-delay:.0s;}
+.reveal.r2{transition-delay:.1s;}
+.reveal.r3{transition-delay:.2s;}
+.reveal.r4{transition-delay:.3s;}
+
+/* SCHOOL HEADS */
+.heads-section{padding:80px 48px;background:var(--bg3);}
+.heads-inner{max-width:1200px;margin:0 auto;}
+.heads-intro{text-align:center;margin-bottom:56px;}
+.heads-intro h2{font-family:'Cormorant Garamond',serif;font-size:clamp(1.9rem,3vw,2.6rem);font-weight:300;color:var(--text-primary);margin-bottom:14px;}
+.heads-intro p{font-size:.93rem;color:var(--text-secondary);max-width:520px;margin:0 auto;line-height:1.75;font-weight:300;}
+.heads-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;margin-bottom:32px;}
+.heads-grid-top{display:flex;justify-content:center;margin-bottom:48px;}
+.head-card{padding:32px 22px 28px;text-align:center;transition:transform .35s,box-shadow .35s;}
+.head-card:hover{transform:translateY(-7px);}
+.head-card.proprietor{max-width:280px;}
+.head-photo-wrap{position:relative;width:110px;height:130px;margin:0 auto 20px;border-radius:12px;overflow:hidden;border:2px solid var(--af-blue);box-shadow:0 0 22px rgba(93,138,168,.28);}
+.head-photo-wrap img{width:100%;height:100%;object-fit:contain;object-position:center;display:block;}
+.head-photo-placeholder{width:100%;height:100%;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,var(--af-blue-deep),var(--af-blue-dark));font-family:'Cormorant Garamond',serif;font-size:2rem;font-weight:600;color:rgba(255,255,255,.6);}
+.head-role-badge{position:absolute;bottom:-1px;left:0;right:0;background:linear-gradient(0deg,rgba(10,15,20,.88) 0%,transparent 100%);padding:8px 6px 6px;font-size:.58rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--af-blue-pale);text-align:center;}
+.head-name{font-family:'Cormorant Garamond',serif;font-size:1.15rem;font-weight:700;color:var(--text-primary);margin-bottom:5px;line-height:1.3;}
+.head-title{font-size:.68rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--af-blue);margin-bottom:12px;}
+.head-desc{font-size:.82rem;line-height:1.68;color:var(--text-secondary);font-weight:300;}
+
+/* ── GALLERY CATEGORIES ── */
+.gal-cats{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:40px;justify-content:center;}
+.gal-cat{padding:9px 22px;font-size:.78rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;border-radius:40px;cursor:pointer;border:1px solid var(--surface-border);color:var(--text-secondary);background:var(--surface);transition:all .3s ease;user-select:none;}
+.gal-cat:hover{color:var(--text-primary);border-color:var(--af-blue);background:rgba(93,138,168,.12);}
+.gal-cat.active{color:var(--pure-white,#fff);background:var(--af-blue);border-color:var(--af-blue);box-shadow:0 4px 16px rgba(93,138,168,.35);}
+.gal-item{position:relative;border-radius:12px;overflow:hidden;cursor:pointer;box-shadow:var(--card-shadow);transition:transform .35s,box-shadow .35s;}
+.gal-item:hover{transform:scale(1.02);box-shadow:0 16px 48px rgba(0,0,0,.35);}
+.gal-item img{width:100%;height:100%;object-fit:cover;object-position:center;}
+.gal-item::after{content:'';position:absolute;inset:0;background:rgba(0,0,0,0);transition:background .3s;}
+.gal-item:hover::after{background:rgba(0,0,0,.1);}
+
+/* ── ACADEMICS PAGE ── */
+.ac-hero{min-height:52vh;padding-top:76px;background:var(--bg2);display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;position:relative;overflow:hidden;}
+.ac-hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 30% 60%,rgba(93,138,168,.13) 0%,transparent 55%),radial-gradient(ellipse at 75% 25%,rgba(93,138,168,.08) 0%,transparent 45%);}
+.ac-hero::after{content:'';position:absolute;inset:0;background-image:linear-gradient(rgba(93,138,168,.03) 1px,transparent 1px),linear-gradient(90deg,rgba(93,138,168,.03) 1px,transparent 1px);background-size:55px 55px;}
+.ac-hero-in{position:relative;z-index:2;padding:56px 48px;max-width:860px;}
+.ac-hero-in h1{font-family:'Cormorant Garamond',serif;font-size:clamp(2.5rem,5.5vw,4.4rem);font-weight:300;color:var(--text-primary);line-height:1.18;margin-bottom:20px;}
+.ac-hero-in h1 em{font-style:italic;color:var(--af-blue-pale);}
+.ac-hero-in p{font-size:1rem;color:var(--text-secondary);line-height:1.82;font-weight:300;max-width:600px;margin:0 auto;}
+.ac-body{padding:88px 48px;background:var(--bg);}
+.ac-body-in{max-width:1200px;margin:0 auto;}
+/* Excellence banner */
+.ac-excellence{padding:40px 48px;margin-bottom:72px;border-radius:20px;text-align:center;position:relative;overflow:hidden;background:linear-gradient(135deg,rgba(27,79,107,.35) 0%,rgba(93,138,168,.18) 100%);border:1px solid rgba(93,138,168,.3);}
+.ac-excellence::before{content:'';position:absolute;inset:0;background-image:radial-gradient(circle at 20% 50%,rgba(93,138,168,.12) 0%,transparent 50%),radial-gradient(circle at 80% 50%,rgba(93,138,168,.08) 0%,transparent 50%);}
+.ac-excellence-in{position:relative;z-index:1;}
+.ac-excellence-in h3{font-family:'Cormorant Garamond',serif;font-size:clamp(1.6rem,3vw,2.2rem);font-weight:300;color:var(--text-primary);margin-bottom:12px;}
+.ac-excellence-in p{font-size:.94rem;color:var(--text-secondary);line-height:1.78;max-width:680px;margin:0 auto;font-weight:300;}
+/* CCP banner */
+.ccp-banner{padding:32px 36px;margin-bottom:72px;border-radius:18px;display:flex;align-items:center;gap:28px;flex-wrap:wrap;}
+.ccp-icon{width:56px;height:56px;flex-shrink:0;border-radius:14px;background:linear-gradient(135deg,var(--af-blue-deep),var(--af-blue));display:flex;align-items:center;justify-content:center;}
+.ccp-icon svg{width:26px;height:26px;color:#fff;}
+.ccp-text h4{font-family:'Cormorant Garamond',serif;font-size:1.4rem;font-weight:600;color:var(--text-primary);margin-bottom:6px;}
+.ccp-text p{font-size:.88rem;line-height:1.72;color:var(--text-secondary);font-weight:300;}
+.ccp-link{margin-left:auto;flex-shrink:0;padding:11px 26px;font-size:.78rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;background:linear-gradient(135deg,var(--af-blue),var(--af-blue-dark));color:#fff;border:none;border-radius:40px;cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;gap:8px;transition:transform .3s,box-shadow .3s;box-shadow:0 4px 16px rgba(93,138,168,.3);}
+.ccp-link:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(93,138,168,.45);}
+/* Stage sections */
+.ac-stage{margin-bottom:72px;}
+.ac-stage:last-child{margin-bottom:0;}
+.stage-header{display:grid;grid-template-columns:auto 1fr;gap:24px;align-items:start;margin-bottom:36px;}
+.stage-num{width:64px;height:64px;border-radius:18px;background:linear-gradient(135deg,var(--af-blue-deep),var(--af-blue));display:flex;align-items:center;justify-content:center;flex-shrink:0;box-shadow:0 4px 20px rgba(93,138,168,.3);}
+.stage-num span{font-family:'Cormorant Garamond',serif;font-size:1.8rem;font-weight:700;color:#fff;}
+.stage-title h2{font-family:'Cormorant Garamond',serif;font-size:clamp(1.8rem,3vw,2.4rem);font-weight:300;color:var(--text-primary);margin-bottom:6px;line-height:1.2;}
+.stage-title .stage-sub{font-size:.72rem;font-weight:600;letter-spacing:.15em;text-transform:uppercase;color:var(--af-blue);}
+.stage-body{display:grid;grid-template-columns:1.1fr 1fr;gap:36px;align-items:start;}
+.stage-text p{font-size:.94rem;line-height:1.85;color:var(--text-secondary);margin-bottom:14px;font-weight:300;}
+.stage-text p:last-child{margin-bottom:0;}
+.stage-right{display:flex;flex-direction:column;gap:20px;}
+/* Classes card */
+.classes-card{padding:24px 22px;}
+.classes-card h4{font-family:'Cormorant Garamond',serif;font-size:1.1rem;font-weight:600;color:var(--text-primary);margin-bottom:14px;}
+.classes-list{display:flex;flex-wrap:wrap;gap:8px;}
+.class-tag{padding:5px 14px;font-size:.74rem;font-weight:500;letter-spacing:.06em;background:rgba(93,138,168,.12);border:1px solid rgba(93,138,168,.22);border-radius:20px;color:var(--af-blue-light);}
+/* Subjects card */
+.subjects-card{padding:24px 22px;}
+.subjects-card h4{font-family:'Cormorant Garamond',serif;font-size:1.1rem;font-weight:600;color:var(--text-primary);margin-bottom:14px;}
+.subj-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;}
+.subj-item{display:flex;align-items:center;gap:8px;font-size:.8rem;color:var(--text-secondary);font-weight:300;}
+.subj-item::before{content:'';width:5px;height:5px;border-radius:50%;background:var(--af-blue);flex-shrink:0;}
+/* Curriculum link */
+.curric-link{display:inline-flex;align-items:center;gap:9px;padding:13px 26px;font-size:.78rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;border:1px solid rgba(93,138,168,.35);border-radius:40px;color:var(--af-blue-light);text-decoration:none;transition:all .3s ease;background:rgba(93,138,168,.08);}
+.curric-link:hover{background:var(--af-blue);color:#fff;border-color:var(--af-blue);box-shadow:0 4px 18px rgba(93,138,168,.38);}
+.curric-link svg{width:15px;height:15px;}
+.stage-divider{border:none;border-top:1px solid var(--divider);margin-bottom:72px;}
 
 /* RESPONSIVE */
+@media(max-width:1024px){
+  nav{padding:0 32px;}
+  .h-about-grid,.sports-in,.founder-grid{grid-template-columns:1fr;}
+  .pillars-grid{grid-template-columns:repeat(2,1fr);}
+  .vals-grid{grid-template-columns:repeat(2,1fr);}
+  .rel-pills{grid-template-columns:1fr;}
+  .boarding-grid{grid-template-columns:1fr;}
+  .dorm-gallery{grid-template-columns:1fr;}
+  .mv-grid{grid-template-columns:1fr;}
+  .offices-grid{grid-template-columns:1fr;}
+  .gal-masonry{grid-template-columns:repeat(auto-fill,minmax(200px,1fr));grid-auto-rows:200px;}
+  .heads-grid{grid-template-columns:repeat(2,1fr);}
+}
 @media(max-width:968px){
-  nav{padding:0 20px;}
+  .stage-body{grid-template-columns:1fr;}
+  .ac-body{padding:68px 20px;}
+  .ac-hero-in{padding:48px 20px;}
+  .ccp-banner{flex-direction:column;align-items:flex-start;}
+  .ccp-link{margin-left:0;}
+}
+@media(max-width:768px){
+  nav{padding:0 20px;height:64px;}
   .nav-links{display:none;}
   .nav-ham{display:flex;}
-  .h-about,.h-pillars,.sports,.ab-body,.ct-body{padding:68px 20px;}
-  .h-about-grid,.ab-intro,.sports-in,.founder-grid,.mv-grid{grid-template-columns:1fr;gap:32px;}
-  .pillars-grid{grid-template-columns:1fr;gap:16px;}
-  .vals-grid{grid-template-columns:1fr 1fr;gap:13px;}
-  .rel-pills{grid-template-columns:1fr;}
-  .ct-hero{padding-left:20px;padding-right:20px;min-height:auto;padding-top:106px;padding-bottom:50px;}
-  .ct-graphic{display:none;}
+  .h-about{padding:60px 20px;}
+  .h-about-grid{gap:30px;}
+  .h-about-txt h2{font-size:1.8rem;}
+  .sports{padding:50px 20px;}
+  .ab-body{padding:60px 20px;}
+  .ab-intro{grid-template-columns:1fr;gap:30px;}
+  .founder-grid{grid-template-columns:1fr;gap:32px;}
+  .mv-grid{grid-template-columns:1fr;gap:22px;}
+  .sports-in{grid-template-columns:1fr;gap:32px;}
   .offices-grid{grid-template-columns:1fr;}
+  .ab-hero-in{padding:40px 20px;}
+  .pillars-hdr{margin-bottom:30px;}
+  .pillars-grid{grid-template-columns:1fr;}
+  .vals-grid{grid-template-columns:1fr;}
+  .gal-body{padding:60px 20px;}
+  .gal-masonry{grid-template-columns:repeat(auto-fill,minmax(150px,1fr));grid-auto-rows:150px;gap:12px;}
+  .ct-hero{padding-left:5vw;padding-right:5vw;}
+  .ct-graphic{display:none;}
+  .ct-body{padding:60px 20px;}
+  .offices-grid{gap:20px;}
   footer{padding:42px 20px 26px;}
   .ft-top{grid-template-columns:1fr;gap:26px;}
   .ft-btm{flex-direction:column;gap:7px;text-align:center;}
   .ab-hero-in{padding:50px 20px;}
+  .heads-section{padding:60px 20px;}
+  .heads-grid{grid-template-columns:1fr;}
 }
 @media(max-width:600px){
   .vals-grid{grid-template-columns:1fr;}
   .off-card{padding:26px 20px;}
   .nav-school-name{display:none;}
+  .stage-header{grid-template-columns:1fr;}
+  .stage-num{display:none;}
+  .subj-grid{grid-template-columns:1fr;}
 }
 </style>
 </head>
@@ -294,13 +450,15 @@ footer{padding:54px 48px 34px;background:var(--footer-bg);border-top:1px solid r
 
 <nav id="navbar">
   <div class="nav-brand" onclick="showPage('home')">
-    <div class="nav-logo"><img src="logo.jpg" alt="School Logo"/></div>
-    <div class="nav-school-name">Asomdwee Ntonton Som-School<span>Excellence · Peace · Progress</span></div>
+    <div class="nav-logo"><img src="pics/logo.jpg" alt="School Logo"/></div>
+    <div class="nav-school-name">Asomdwee Ntonton Som School<span>Excellence · Peace · Progress</span></div>
   </div>
   <div class="nav-right">
     <div class="nav-links">
       <span class="nav-link active" onclick="showPage('home')" data-page="home">Home</span>
       <span class="nav-link" onclick="showPage('about')" data-page="about">About</span>
+      <span class="nav-link" onclick="showPage('academics')" data-page="academics">Academics</span>
+      <span class="nav-link" onclick="showPage('gallery')" data-page="gallery">Gallery</span>
       <span class="nav-link" onclick="showPage('contact')" data-page="contact">Contact</span>
     </div>
     <div class="nav-ham" id="ham" onclick="toggleMenu()"><span></span><span></span><span></span></div>
@@ -309,9 +467,10 @@ footer{padding:54px 48px 34px;background:var(--footer-bg);border-top:1px solid r
 <div class="mob-menu" id="mobMenu">
   <span class="mob-link active" onclick="showPage('home');toggleMenu();" data-page="home">Home</span>
   <span class="mob-link" onclick="showPage('about');toggleMenu();" data-page="about">About</span>
+  <span class="mob-link" onclick="showPage('academics');toggleMenu();" data-page="academics">Academics</span>
+  <span class="mob-link" onclick="showPage('gallery');toggleMenu();" data-page="gallery">Gallery</span>
   <span class="mob-link" onclick="showPage('contact');toggleMenu();" data-page="contact">Contact</span>
 </div>
-
 
 <div class="page active" id="page-home">
   <section class="hero">
@@ -330,7 +489,7 @@ footer{padding:54px 48px 34px;background:var(--footer-bg);border-top:1px solid r
     </div>
     <div class="hero-cnt">
       <p class="hero-tag">Welcome to</p>
-      <h1 class="hero-ttl">Asomdwee Ntonton<br/><em>Som-School</em></h1>
+      <h1 class="hero-ttl">Asomdwee Ntonton<br/><em>Som School</em></h1>
       <p class="hero-sub">Where knowledge meets character. Rooted in peace, unity and faith —<br/>shaping the leaders of tomorrow.</p>
       <button class="hero-btn" onclick="showPage('about')">
         Discover Our School
@@ -345,7 +504,7 @@ footer{padding:54px 48px 34px;background:var(--footer-bg);border-top:1px solid r
       <div class="h-about-txt reveal">
         <p class="sec-lbl">Who We Are</p>
         <h2>A School Rooted in<br/><em>Peace & Purpose</em></h2>
-        <p>Asomdwee Ntonton Som-School is built on the spiritual foundation of Asomdwee Ntonton Som — the Religion of Peace, Praise and Togetherness — a Ghanaian indigenous faith rooted in the worship of the Most High God, RABBI. Our school carries forward the philosophy of its name: weaving unity, discipline and spiritual consciousness into every dimension of learning.</p>
+        <p>Asomdwee Ntonton Som School is built on the spiritual foundation of Asomdwee Ntonton Som — the Religion of Peace, Praise and Togetherness — a Ghanaian indigenous faith rooted in the worship of the Most High God, RABBI. Our school carries forward the philosophy of its name: weaving unity, discipline and spiritual consciousness into every dimension of learning.</p>
         <p>Located in Apam, Central Region, we are committed to providing a holistic, high-quality education that honours both our cultural roots and the aspirations of a modern world. Every child who walks through our doors is seen, valued and empowered.</p>
         <button class="txt-link" onclick="showPage('about')">Learn More
           <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" width="13" height="13"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
@@ -354,14 +513,14 @@ footer{padding:54px 48px 34px;background:var(--footer-bg);border-top:1px solid r
       <div class="found-card card reveal r2">
         <p class="sec-lbl">Our Foundation</p>
         <div class="found-row">
-          <div class="found-img"><img src="nsy.jpg" alt="Ɔkronkronyi Nyame Somafo Yawoh"/></div>
+          <div class="found-img"><img src="pics/nsy.jpg" alt="Ɔkronkronyi Nyame Somafo Yawoh"/></div>
           <div class="found-info">
             <h3>Ɔkronkronyi Nyame Somafo Yawoh</h3>
             <span>Founder · Spiritual Leader</span>
           </div>
         </div>
         <p>The school draws its identity from the life and extraordinary works of Ɔkronkronyi Nyame Somafo Yawoh — founder of Asomdwee Ntonton Som, the Third Religion of God. Known as a healer, a teacher and a spiritual leader through whom divine power flows, his central conviction has always been that true knowledge, rooted in faith, illuminates the path to a better life. This school is the living expression of that conviction.</p>
-        <div class="pic9-wrap"><a href="https://asomdweentontonsom.com"><img src="pic9.jpg" alt="Asomdwee Ntonton Som"/></a></div>
+        <div class="pic9-wrap"><a href="https://asomdweentontonsom.com"><img src="pics/pic9.jpg" alt="Asomdwee Ntonton Som"/></a></div>
       </div>
     </div>
   </section>
@@ -389,12 +548,12 @@ footer{padding:54px 48px 34px;background:var(--footer-bg);border-top:1px solid r
         <p>Rooted in the teachings of peace, unity and togetherness, we nurture integrity, empathy and moral responsibility — building citizens of good character.</p>
       </div>
       <div class="p-card card reveal r1">
-        <div class="p-icon"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg></div>
+        <div class="p-icon"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0110.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg></div>
         <h3>Cultural Identity</h3>
         <p>We celebrate our Ghanaian heritage and the rich traditions of Asomdwee Ntonton Som while equipping students to engage confidently with the wider world.</p>
       </div>
       <div class="p-card card reveal r2">
-        <div class="p-icon"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/></svg></div>
+        <div class="p-icon"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0114 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/></svg></div>
         <h3>Holistic Growth</h3>
         <p>From the classroom to the community, we invest in the whole child — nurturing intellectual, social, emotional and spiritual growth at every stage.</p>
       </div>
@@ -408,48 +567,17 @@ footer{padding:54px 48px 34px;background:var(--footer-bg);border-top:1px solid r
 
   <section class="sports">
     <div class="sports-in">
-      <div class="sports-img reveal"><img src="pic7.jpg" alt="Students in sports activities"/></div>
+      <div class="sports-img reveal"><img src="pics/pic7.JPG" alt="Students in sports activities"/></div>
       <div class="sports-txt reveal r2">
         <p class="sec-lbl">Active & Energetic</p>
         <h2>Sports & Physical Development</h2>
-        <p>At Asomdwee Ntonton Som-School, we believe a strong body supports a strong mind. Our students actively participate in a variety of sporting activities that build teamwork, discipline, resilience and healthy habits that last a lifetime.</p>
+        <p>At Asomdwee Ntonton Som School, we believe a strong body supports a strong mind. Our students actively participate in a variety of sporting activities that build teamwork, discipline, resilience and healthy habits that last a lifetime.</p>
         <p>From organised competitions to daily physical education, sport is woven into the fabric of school life — giving every student the opportunity to discover their physical strengths, work as a team and develop the confidence that comes from pushing personal boundaries.</p>
       </div>
     </div>
   </section>
 
-  <footer>
-    <div class="ft-in">
-      <div class="ft-top">
-        <div class="ft-brand">
-          <div class="nav-brand" onclick="showPage('home')">
-            <div class="nav-logo"><img src="logo.jpg" alt="Logo"/></div>
-            <div class="nav-school-name" style="color:#fff;">Asomdwee Ntonton Som-School<span>Excellence · Peace · Progress</span></div>
-          </div>
-          <p>Rooted in faith, purpose and the pursuit of knowledge. Nurturing the next generation of leaders from Apam, Central Region, Ghana.</p>
-        </div>
-        <div class="ft-col">
-          <h4>Navigate</h4>
-          <a onclick="showPage('home')">Home</a>
-          <a onclick="showPage('about')">About Us</a>
-          <a onclick="showPage('contact')">Contact</a>
-        </div>
-        <div class="ft-col">
-          <h4>Reach Us</h4>
-          <a href="tel:+233243444864">+233 24 344 4864</a>
-          <a href="tel:+233242556318">+233 24 255 6318</a>
-          <a href="mailto:esselkhadis@gmail.com">esselkhadis@gmail.com</a>
-          <a>Apam, Central Region, Ghana</a>
-        </div>
-      </div>
-      <div class="ft-btm">
-        <span>© 2026 Asomdwee Ntonton Som-School. All rights reserved.</span>
-        <span>Nyimdzepa Fir Kan</span>
-      </div>
-    </div>
-  </footer>
 </div>
-
 
 <div class="page" id="page-about">
   <section class="ab-hero">
@@ -469,9 +597,9 @@ footer{padding:54px 48px 34px;background:var(--footer-bg);border-top:1px solid r
         <div class="ab-intro-txt reveal">
           <p class="sec-lbl">Our Story</p>
           <h2>Rooted in Purpose,<br/>Growing with Vision</h2>
-          <p>In 2023, something remarkable took root in Apam. Asomdwee Ntonton Som-School opened its doors — not simply as another school, but as a declaration: that every child in this community deserves an education that sees them wholly, honours who they are and prepares them courageously for the world ahead.</p>
+          <p>In 2023, something remarkable took root in Apam. Asomdwee Ntonton Som School opened its doors — not simply as another school, but as a declaration: that every child in this community deserves an education that sees them wholly, honours who they are and prepares them courageously for the world ahead.</p>
           <p>The school was conceived and founded in the spirit and image of Asomdwee Ntonton Som — the Religion of Peaceful Exaltations. From its very first day, the school has been shaped by the faith's core conviction: that peace, praise and togetherness are not just virtues to preach, but principles to live and to teach. This is a school where the spiritual and the academic walk hand in hand.</p>
-          <p>While firmly grounded in the structure and standards of the Ghana Education Service, Asomdwee Ntonton Som-School weaves a thread of the religion's teachings into the fabric of daily learning. Children here do not only gain knowledge — they gain wisdom. They are not only taught to read the world; they are taught to understand it with grace, integrity and a sense of divine purpose.</p>
+          <p>While firmly grounded in the structure and standards of the Ghana Education Service, Asomdwee Ntonton Som School weaves a thread of the religion's teachings into the fabric of daily learning. Children here do not only gain knowledge — they gain wisdom. They are not only taught to read the world; they are taught to understand it with grace, integrity and a sense of divine purpose.</p>
           <p>Since 2023, the growth has been both quiet and extraordinary. What began as a bold community vision has blossomed into something genuinely promising — a school that families believe in, children thrive in and teachers pour their hearts into. The journey has only just begun, and already, its promise shines clearly in the lives of every child who has come through.</p>
         </div>
         <div class="ab-aside reveal r2">
@@ -501,11 +629,11 @@ footer{padding:54px 48px 34px;background:var(--footer-bg);border-top:1px solid r
       <div class="founder-sec reveal">
         <p class="sec-lbl" style="margin-bottom:14px;">Our Spiritual Foundation</p>
         <div class="founder-grid">
-          <div class="founder-port"><img src="nsy.jpg" alt="Ɔkronkronyi Nyame Somafo Yawoh"/></div>
+          <div class="founder-port"><img src="pics/nsy.jpg" alt="Ɔkronkronyi Nyame Somafo Yawoh"/></div>
           <div class="f-bio">
             <h2>Ɔkronkronyi Nyame Somafo Yawoh</h2>
             <p class="f-title">Founder of Asomdwee Ntonton Som · Spiritual Leader</p>
-            <p>Asomdwee Ntonton Som-School draws its identity and founding spirit from the life and extraordinary works of Ɔkronkronyi Nyame Somafo Yawoh — founder and spiritual leader of Asomdwee Ntonton Som, widely described as the Third Religion of the Most High God, RABBI. Born on February 28, 1952 in Ekumfi Dunkwa in Ghana's Central Region, his calling into ministry was, as his followers insist, not of his own choosing — it was divinely ordained.</p>
+            <p>Asomdwee Ntonton Som School draws its identity and founding spirit from the life and extraordinary works of Ɔkronkronyi Nyame Somafo Yawoh — founder and spiritual leader of Asomdwee Ntonton Som, widely described as the Third Religion of the Most High God, RABBI. Born on February 28, 1952 in Ekumfi Dunkwa in Ghana's Central Region, his calling into ministry was, as his followers insist, not of his own choosing — it was divinely ordained.</p>
             <p>What makes his story truly remarkable goes beyond preaching and teaching. Ɔkronkronyi Nyame Somafo Yawoh is widely known among his followers for healing the sick — not through any form of medicine or conventional treatment, but through divine power alone. People from all walks of life, carrying ailments that the world had given up on, have testified to receiving healing through his intercession. To those who have witnessed it, this is not legend — it is lived experience.</p>
             <p>He is also the man behind the construction of the Third Temple of God, built in Ekumfi Otuam in Ghana's Central Region — a sacred site that believers from across the country and beyond make pilgrimage to. According to his teachings, Ghana holds a divine place at the centre of the world's spiritual geography, and the Third Temple stands as a fulfilment of ancient prophecy. Ɔkronkronyi Nyame Somafo Yawoh has been received by heads of state, including former President John Agyekum Kufuor, in recognition of his remarkable contributions to Ghanaian faith, culture and national life.</p>
             <p>The school carries forward his deepest conviction: that true knowledge, when rooted in faith and shaped by good character, is the most powerful and lasting gift a society can offer its children. The name Asomdwee Ntonton — "Peaceful Exaltations" — reflects our commitment to nurturing young people who live in peace, reach upward in praise and go forward with purpose.</p>
@@ -518,14 +646,142 @@ footer{padding:54px 48px 34px;background:var(--footer-bg);border-top:1px solid r
         </div>
       </div>
 
+      <div class="boarding-sec reveal">
+        <div class="boarding-hdr">
+          <p class="sec-lbl" style="margin-bottom:14px;">A Home Away From Home</p>
+          <h2>Boarding Facilities for Our Students</h2>
+        </div>
+        <p class="boarding-intro">At Asomdwee Ntonton Som School, we understand that many of our students come from distant places across Ghana and beyond. To support their journey of learning and growth, we offer comfortable, secure and nurturing boarding facilities that serve as a true home away from home. Our dormitories are designed with the well-being and safety of every student in mind, providing a warm and supportive environment where young people can thrive both academically and personally.</p>
+        
+        <div class="boarding-grid">
+          <div class="dorm-section">
+            <h3>Boys' Dormitory</h3>
+            <p>Our boys' dormitory is a spacious, well-maintained facility designed to foster brotherhood, responsibility and mutual respect. Each room is thoughtfully arranged to provide comfort and privacy while encouraging community and shared learning. The dormitory features modern amenities, secure storage, study areas and recreational spaces where students can relax, bond and develop lifelong friendships. Our dedicated residential staff ensure that every boy feels safe, supported and cared for throughout his stay.</p>
+            <div class="dorm-gallery">
+              <div class="dorm-img-placeholder" onclick="openModal('boys_dorm1.jpg')">
+                <div style="text-align:center;color:var(--text-muted);font-size:.8rem;">Boys' Dorm Image 1</div>
+              </div>
+              <div class="dorm-img-placeholder" onclick="openModal('boys_dorm2.jpg')">
+                <div style="text-align:center;color:var(--text-muted);font-size:.8rem;">Boys' Dorm Image 2</div>
+              </div>
+              <div class="dorm-img-placeholder" onclick="openModal('boys_dorm3.jpg')">
+                <div style="text-align:center;color:var(--text-muted);font-size:.8rem;">Boys' Dorm Image 3</div>
+              </div>
+              <div class="dorm-img-placeholder" onclick="openModal('boys_dorm4.jpg')">
+                <div style="text-align:center;color:var(--text-muted);font-size:.8rem;">Boys' Dorm Image 4</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="dorm-section">
+            <h3>Girls' Dormitory</h3>
+            <p>Our girls' dormitory is an equally spacious and welcoming sanctuary, designed to empower young women with confidence, independence and sisterhood. The facility offers comfortable living spaces, secure lockers, study zones and common areas for social interaction and personal development. With attention to detail and a commitment to creating a nurturing environment, our residential team ensures that every girl experiences safety, dignity and genuine care. The dormitory becomes a place where lifelong bonds are formed and personal growth is celebrated.</p>
+            <div class="dorm-gallery">
+              <div class="dorm-img-placeholder" onclick="openModal('girls_dorm1.jpg')">
+                <div style="text-align:center;color:var(--text-muted);font-size:.8rem;">Girls' Dorm Image 1</div>
+              </div>
+              <div class="dorm-img-placeholder" onclick="openModal('girls_dorm2.jpg')">
+                <div style="text-align:center;color:var(--text-muted);font-size:.8rem;">Girls' Dorm Image 2</div>
+              </div>
+              <div class="dorm-img-placeholder" onclick="openModal('girls_dorm3.jpg')">
+                <div style="text-align:center;color:var(--text-muted);font-size:.8rem;">Girls' Dorm Image 3</div>
+              </div>
+              <div class="dorm-img-placeholder" onclick="openModal('girls_dorm4.jpg')">
+                <div style="text-align:center;color:var(--text-muted);font-size:.8rem;">Girls' Dorm Image 4</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="heads-section">
+    <div class="heads-inner">
+      <div class="heads-intro reveal">
+        <p class="sec-lbl center">The People Behind the School</p>
+        <h2>Our Leadership Team</h2>
+        <p>Every great school is shaped by the people who lead it. These are the dedicated individuals who give their best every single day — guiding our teachers, supporting our students and keeping the vision of Asomdwee Ntonton Som School alive and growing.</p>
+      </div>
+      <div class="heads-grid-top reveal">
+        <div class="head-card glass proprietor">
+          <div class="head-photo-wrap">
+            <img src="pics/nsy.jpg" alt="Ɔkronkronyi Nyame Somafo Yawoh" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+            <div class="head-photo-placeholder" style="display:none;">NY</div>
+            <div class="head-role-badge">Proprietor</div>
+          </div>
+          <div class="head-name">Ɔkronkronyi Nyame Somafo Yawoh</div>
+          <div class="head-title">School Proprietor</div>
+          <div class="head-desc">The visionary founder and proprietor of Asomdwee Ntonton Som School. His spiritual leadership and unwavering commitment to education rooted in faith guide the entire school community. Through his wisdom and purpose, the school stands as a beacon of excellence and character development.</div>
+        </div>
+      </div>
+      <div class="heads-grid">
+        <div class="head-card glass reveal r1">
+          <div class="head-photo-wrap">
+            <img src="pics/pic5.jpg" alt="Mr. Mark Asare" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+            <div class="head-photo-placeholder" style="display:none;">MA</div>
+            <div class="head-role-badge">Headmaster</div>
+          </div>
+          <div class="head-name">Mr. Mark Asare</div>
+          <div class="head-title">Headmaster</div>
+          <div class="head-desc">The heart and driving force of the school. Mr. Asare provides overall leadership — setting the tone for academic standards, school culture and the daily life of every student and staff member.</div>
+        </div>
+        <div class="head-card glass reveal r2">
+          <div class="head-photo-wrap">
+            <img src="asst_head.jpg" alt="Kojo" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+            <div class="head-photo-placeholder" style="display:none;">KO</div>
+            <div class="head-role-badge">Asst. Head</div>
+          </div>
+          <div class="head-name">Kojo</div>
+          <div class="head-title">Assistant Head of Academics</div>
+          <div class="head-desc">The guardian of academic excellence. Kojo oversees the delivery of the curriculum, supports teachers in their craft and ensures that every learner is given the tools to reach their full potential.</div>
+        </div>
+        <div class="head-card glass reveal r3">
+          <div class="head-photo-wrap">
+            <img src="pics/kk.jpg" alt="Mrs. Khadijah Essel" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+            <div class="head-photo-placeholder" style="display:none;">KE</div>
+            <div class="head-role-badge">Administrator</div>
+          </div>
+          <div class="head-name">Mrs. Khadijah Essel</div>
+          <div class="head-title">Administrator</div>
+          <div class="head-desc">The backbone of school operations. Mrs. Essel manages the administrative functions that keep the school running smoothly — from records and resources to communication and coordination.</div>
+        </div>
+        <div class="head-card glass reveal r4">
+          <div class="head-photo-wrap">
+            <img src="catering.jpg" alt="Ms. Gladys Botwey" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+            <div class="head-photo-placeholder" style="display:none;">GB</div>
+            <div class="head-role-badge">Catering</div>
+          </div>
+          <div class="head-name">Ms. Gladys Botwey</div>
+          <div class="head-title">Catering Officer</div>
+          <div class="head-desc">The one who makes sure no child goes hungry or uncared for. Ms. Botwey oversees the school's catering, ensuring that every meal served is nutritious, well-prepared and delivered with warmth.</div>
+        </div>
+        <div class="head-card glass reveal r5">
+          <div class="head-photo-wrap">
+            <img src="fiifi.jpg" alt="Uncle Fiifi" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+            <div class="head-photo-placeholder" style="display:none;">UF</div>
+            <div class="head-role-badge">Core Trainer</div>
+          </div>
+          <div class="head-name">Uncle Fiifi</div>
+          <div class="head-title">Core Trainer</div>
+          <div class="head-desc">The bridge between knowledge and practice. Uncle Fiifi works directly with teachers and students to strengthen the delivery of learning — coaching classroom techniques, reinforcing curriculum standards and ensuring that every lesson goes beyond content to build genuine understanding and lasting skill.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="ab-body" style="padding-top:0;">
+    <div class="ab-body-in">
+
       <div class="ab-vals reveal">
         <p class="sec-lbl center" style="margin-bottom:12px;">What We Stand For</p>
         <h2>Our Core Values</h2>
         <div class="vals-grid">
-          <div class="val-c card reveal r1"><div class="val-n">01</div><h3>Integrity</h3><p>Honesty, transparency and ethical conduct in every dimension of school life — from the classroom to the playing field.</p></div>
-          <div class="val-c card reveal r2"><div class="val-n">02</div><h3>Excellence</h3><p>Challenging every student to push beyond their limits and celebrate growth, effort and the pursuit of their personal best.</p></div>
-          <div class="val-c card reveal r3"><div class="val-n">03</div><h3>Compassion</h3><p>Nurturing empathy and kindness, teaching students to value each other's humanity and serve their communities with care.</p></div>
-          <div class="val-c card reveal r4"><div class="val-n">04</div><h3>Curiosity</h3><p>Igniting a love of learning beyond textbooks — inspiring students to ask bold questions and explore the world creatively.</p></div>
+          <div class="val-c glass reveal r1"><div class="val-n">01</div><h3>Integrity</h3><p>Honesty, transparency and ethical conduct in every dimension of school life — from the classroom to the playing field.</p></div>
+          <div class="val-c glass reveal r2"><div class="val-n">02</div><h3>Excellence</h3><p>Challenging every student to push beyond their limits and celebrate growth, effort and the pursuit of their personal best.</p></div>
+          <div class="val-c glass reveal r3"><div class="val-n">03</div><h3>Compassion</h3><p>Nurturing empathy and kindness, teaching students to value each other's humanity and serve their communities with care.</p></div>
+          <div class="val-c glass reveal r4"><div class="val-n">04</div><h3>Curiosity</h3><p>Igniting a love of learning beyond textbooks — inspiring students to ask bold questions and explore the world creatively.</p></div>
         </div>
       </div>
 
@@ -539,42 +795,225 @@ footer{padding:54px 48px 34px;background:var(--footer-bg);border-top:1px solid r
         <h2>Milestones That Shaped Us</h2>
       </div>
       <div class="timeline reveal">
-        <div class="tl-item"><div class="tl-yr">2023 · Foundation</div><h3>The School Opens Its Doors</h3><p>In 2023, Asomdwee Ntonton Som-School was established in Apam, Central Region — born from the faith and vision of Asomdwee Ntonton Som. From day one, it was built on the structure of the Ghana Education Service and enriched with the teachings of the religion: a school designed to raise children who are as knowledgeable as they are grounded.</p></div>
+        <div class="tl-item"><div class="tl-yr">2023 · Foundation</div><h3>The School Opens Its Doors</h3><p>In 2023, Asomdwee Ntonton Som School was established in Apam, Central Region — born from the faith and vision of Asomdwee Ntonton Som. From day one, it was built on the structure of the Ghana Education Service and enriched with the teachings of the religion: a school designed to raise children who are as knowledgeable as they are grounded.</p></div>
         <div class="tl-item"><div class="tl-yr">2023–2024 · Early Growth</div><h3>A Community Begins to Believe</h3><p>Word spread quickly. Families across Apam began to entrust their children to the school, drawn by its warm environment, dedicated teachers and a genuinely different approach to learning. Academic tracks were introduced alongside activities in sports, arts and community involvement — the full shape of a holistic school began to take form.</p></div>
         <div class="tl-item"><div class="tl-yr">2024–2025 · Growing Stronger</div><h3>A Promising Future Takes Shape</h3><p>With each passing term, the school has grown — not just in numbers, but in spirit and reputation. Children who have come through its doors carry something with them that goes beyond grades: a sense of purpose, a love of learning and the values instilled by a school that genuinely cares about who they are becoming.</p></div>
-        <div class="tl-item"><div class="tl-yr">Today · Onward</div><h3>The Journey Continues</h3><p>Asomdwee Ntonton Som-School is still young, but its promise is already evident. Each new school year brings new children, new stories and a renewed commitment to the founding vision — that education, grounded in faith and guided by purpose, can shape a brighter future for every child in this community and beyond.</p></div>
+        <div class="tl-item"><div class="tl-yr">Today · Onward</div><h3>The Journey Continues</h3><p>Asomdwee Ntonton Som School is still young, but its promise is already evident. Each new school year brings new children, new stories and a renewed commitment to the founding vision — that education, grounded in faith and guided by purpose, can shape a brighter future for every child in this community and beyond.</p></div>
       </div>
 
     </div>
   </section>
 
-  <footer>
-    <div class="ft-in">
-      <div class="ft-top">
-        <div class="ft-brand">
-          <div class="nav-brand" onclick="showPage('home')">
-            <div class="nav-logo"><img src="logo.jpg" alt="Logo"/></div>
-            <div class="nav-school-name" style="color:#fff;">Asomdwee Ntonton Som-School<span>Excellence · Peace · Progress</span></div>
-          </div>
-          <p>Rooted in faith, purpose and the pursuit of knowledge. Nurturing the next generation from Apam, Central Region, Ghana.</p>
-        </div>
-        <div class="ft-col">
-          <h4>Navigate</h4>
-          <a onclick="showPage('home')">Home</a>
-          <a onclick="showPage('about')">About Us</a>
-          <a onclick="showPage('contact')">Contact</a>
-        </div>
-        <div class="ft-col">
-          <h4>Reach Us</h4>
-          <a href="tel:+233243444864">+233 24 344 4864</a>
-          <a href="tel:+233242556318">+233 24 255 6318</a>
-          <a href="mailto:esselkhadis@gmail.com">esselkhadis@gmail.com</a>
-          <a>Apam, Central Region, Ghana</a>
+</div>
+
+<div class="page" id="page-academics">
+  <section class="ac-hero">
+    <div class="ac-hero-in">
+      <p class="sec-lbl center">What We Teach</p>
+      <h1>Academics at<br/><em>Asomdwee Ntonton Som School</em></h1>
+      <p>We follow the Ghana Education Service structure from Pre-school through to Junior High School — enriched by the Common Core Programme and guided by the spirit of Asomdwee Ntonton Som. Since our founding, every stage of learning here has been marked by nothing but excellence.</p>
+    </div>
+  </section>
+
+  <section class="ac-body">
+    <div class="ac-body-in">
+
+      <div class="ac-excellence reveal">
+        <div class="ac-excellence-in">
+          <p class="sec-lbl center" style="margin-bottom:10px;">Our Track Record</p>
+          <h3>Excellence From the Very First Day</h3>
+          <p>Since Asomdwee Ntonton Som School opened its doors in 2023, the results have spoken for themselves. From the youngest children in Pre-school to our growing Junior High School cohort, every stage of education at this school has been characterised by genuine academic achievement, strong character development and the quiet confidence of children who know they are being well taught. We are proud of what has been accomplished — and we are only just getting started.</p>
         </div>
       </div>
-      <div class="ft-btm"><span>© 2026 Asomdwee Ntonton Som-School. All rights reserved.</span><span>Nyimdzepa Fir Kan</span></div>
+
+      <div class="ccp-banner glass reveal">
+        <div class="ccp-icon"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg></div>
+        <div class="ccp-text">
+          <h4>The Common Core Programme (CCP)</h4>
+          <p>Developed by the National Council for Curriculum and Assessment (NaCCA) under the Ministry of Education, the CCP is Ghana's modern, standards-based curriculum for KG through JHS. It focuses on building character, nurturing values and equipping learners with 21st-century skills — going beyond memorisation to foster creativity, critical thinking and real-world problem-solving. Asomdwee Ntonton Som School is fully aligned with this curriculum at all levels.</p>
+        </div>
+        <a class="ccp-link" href="https://nacca.gov.gh/curriculum/" target="_blank" rel="noopener">
+          View Full Curriculum
+          <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" width="14" height="14"><path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+        </a>
+      </div>
+
+      <div class="ac-stage reveal">
+        <div class="stage-header">
+          <div class="stage-num"><span>01</span></div>
+          <div class="stage-title">
+            <h2>Pre-School</h2>
+            <span class="stage-sub">Kindergarten 1 &amp; 2 · Ages 4–6 · 2 Years</span>
+          </div>
+        </div>
+        <div class="stage-body">
+          <div class="stage-text">
+            <p>The Pre-school years are where everything begins. At Asomdwee Ntonton Som School, we treat these two years — Kindergarten 1 and Kindergarten 2 — with the reverence they deserve, because we understand that what a child experiences in their earliest school years shapes how they feel about learning for the rest of their life.</p>
+            <p>Our Pre-school follows the GES/NaCCA standards-based curriculum for Kindergarten, which is structured around six core developmental areas. Through play, song, storytelling, movement and guided discovery, our young learners are gently introduced to language, numbers and the world around them — all while developing the social and emotional foundations they will carry into every classroom that follows.</p>
+            <p>The classrooms are warm and welcoming, our teachers are patient and encouraging, and every child is met exactly where they are. We believe that the best thing a school can do for a four-year-old is to make them love coming to school — and at Asomdwee Ntonton Som School, that is exactly what we do.</p>
+            <a class="curric-link" href="https://nacca.gov.gh/kg-curriculum/" target="_blank" rel="noopener">
+              <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 10v6m0 0l-3-3m3 3l3-3M3 17V7a2 2 0 012-2h6l2 2h6a2 2 0 012 2v8a2 2 0 01-2 2H5a2 2 0 01-2-2z"/></svg>
+              KG Curriculum (NaCCA)
+            </a>
+          </div>
+          <div class="stage-right">
+            <div class="classes-card glass">
+              <h4>Classes Offered</h4>
+              <div class="classes-list">
+                <span class="class-tag">Kindergarten 1</span>
+                <span class="class-tag">Kindergarten 2</span>
+              </div>
+            </div>
+            <div class="subjects-card card">
+              <h4>Learning Areas</h4>
+              <div class="subj-grid">
+                <span class="subj-item">Language &amp; Literacy</span>
+                <span class="subj-item">Mathematics (Number Work)</span>
+                <span class="subj-item">Environmental Studies</span>
+                <span class="subj-item">Creative Arts &amp; Drawing</span>
+                <span class="subj-item">Music &amp; Movement</span>
+                <span class="subj-item">Physical Education</span>
+                <span class="subj-item">Religious &amp; Moral Education</span>
+                <span class="subj-item">Ghanaian Language</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr class="stage-divider"/>
+
+      <div class="ac-stage reveal">
+        <div class="stage-header">
+          <div class="stage-num"><span>02</span></div>
+          <div class="stage-title">
+            <h2>Primary School</h2>
+            <span class="stage-sub">Basic 1 – Basic 6 · Ages 6–12 · 6 Years</span>
+          </div>
+        </div>
+        <div class="stage-body">
+          <div class="stage-text">
+            <p>Primary School is where curiosity takes flight. Across six years — from Basic 1 through to Basic 6 — our pupils move from learning to read to reading to learn; from counting on their fingers to solving problems with confidence. It is a journey of remarkable transformation, and we have the privilege of witnessing it every single day.</p>
+            <p>Our Primary curriculum is built on the NaCCA Standards-Based Curriculum introduced in 2019, which divides the six years into Lower Primary (Basic 1–3) and Upper Primary (Basic 4–6). The emphasis throughout is on enquiry, creativity and making meaning — not rote repetition. Children are encouraged to ask questions, think critically and connect what they learn in the classroom to the world outside it.</p>
+            <p>At Asomdwee Ntonton Som School, Primary education is also where the values of the school are most deeply felt. The gentle integration of the teachings of Asomdwee Ntonton Som — peace, purpose and togetherness — runs quietly through the fabric of daily school life, shaping young minds and young hearts in equal measure.</p>
+            <a class="curric-link" href="https://nacca.gov.gh/lower-primary-curriculum/" target="_blank" rel="noopener">
+              <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 10v6m0 0l-3-3m3 3l3-3M3 17V7a2 2 0 012-2h6l2 2h6a2 2 0 012 2v8a2 2 0 01-2 2H5a2 2 0 01-2-2z"/></svg>
+              Primary Curriculum (NaCCA)
+            </a>
+          </div>
+          <div class="stage-right">
+            <div class="classes-card glass">
+              <h4>Classes Offered</h4>
+              <div class="classes-list">
+                <span class="class-tag">Basic 1</span>
+                <span class="class-tag">Basic 2</span>
+                <span class="class-tag">Basic 3</span>
+                <span class="class-tag">Basic 4</span>
+                <span class="class-tag">Basic 5</span>
+                <span class="class-tag">Basic 6</span>
+              </div>
+            </div>
+            <div class="subjects-card card">
+              <h4>Subjects Taught</h4>
+              <div class="subj-grid">
+                <span class="subj-item">English Language</span>
+                <span class="subj-item">Mathematics</span>
+                <span class="subj-item">Science</span>
+                <span class="subj-item">Social Studies</span>
+                <span class="subj-item">Ghanaian Language</span>
+                <span class="subj-item">Religious &amp; Moral Ed.</span>
+                <span class="subj-item">Creative Arts &amp; Design</span>
+                <span class="subj-item">Computing / ICT</span>
+                <span class="subj-item">Physical &amp; Health Ed.</span>
+                <span class="subj-item">French</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr class="stage-divider"/>
+
+      <div class="ac-stage reveal">
+        <div class="stage-header">
+          <div class="stage-num"><span>03</span></div>
+          <div class="stage-title">
+            <h2>Junior High School</h2>
+            <span class="stage-sub">JHS 1 – JHS 3 (Basic 7 – Basic 9) · Ages 12–15 · 3 Years</span>
+          </div>
+        </div>
+        <div class="stage-body">
+          <div class="stage-text">
+            <p>Junior High School is where students begin to discover who they are becoming. Across three years — JHS 1, JHS 2 and JHS 3 — our students grow rapidly in academic depth, personal maturity and a clearer sense of their own gifts and ambitions. It is our responsibility to match that growth with teaching that challenges, inspires and prepares.</p>
+            <p>Our JHS programme runs on the Common Core Programme (CCP) Curriculum — Ghana's most recent and comprehensive curriculum reform, implemented progressively from the 2021/2022 academic year. The CCP is designed specifically for Basic 7 to Basic 9, with a focus on building character alongside academic knowledge. It equips learners with 21st-century competencies: critical thinking, communication, creativity, collaboration and digital literacy. There are no optional subjects — every learner studies the full range of core areas.</p>
+            <p>JHS 3 culminates in the Basic Education Certificate Examination (BECE), which opens the door to Senior High School. At Asomdwee Ntonton Som School, we prepare our JHS students thoroughly — academically, spiritually and emotionally — so that they leave us ready not just for the exam, but for the life that comes after it.</p>
+            <a class="curric-link" href="https://nacca.gov.gh/common-core-programme-ccp/" target="_blank" rel="noopener">
+              <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 10v6m0 0l-3-3m3 3l3-3M3 17V7a2 2 0 012-2h6l2 2h6a2 2 0 012 2v8a2 2 0 01-2 2H5a2 2 0 01-2-2z"/></svg>
+              CCP Curriculum (NaCCA)
+            </a>
+          </div>
+          <div class="stage-right">
+            <div class="classes-card glass">
+              <h4>Classes Offered</h4>
+              <div class="classes-list">
+                <span class="class-tag">JHS 1 (Basic 7)</span>
+                <span class="class-tag">JHS 2 (Basic 8)</span>
+                <span class="class-tag">JHS 3 (Basic 9)</span>
+              </div>
+            </div>
+            <div class="subjects-card card">
+              <h4>CCP Subjects</h4>
+              <div class="subj-grid">
+                <span class="subj-item">English Language</span>
+                <span class="subj-item">Mathematics</span>
+                <span class="subj-item">Integrated Science</span>
+                <span class="subj-item">Social Studies</span>
+                <span class="subj-item">Ghanaian Language</span>
+                <span class="subj-item">Religious &amp; Moral Ed.</span>
+                <span class="subj-item">Creative Arts &amp; Design</span>
+                <span class="subj-item">Career Technology</span>
+                <span class="subj-item">Computing / ICT</span>
+                <span class="subj-item">Physical &amp; Health Ed.</span>
+                <span class="subj-item">French</span>
+                <span class="subj-item">Arabic</span>
+              </div>
+            </div>
+            <div class="glass-blue" style="padding:18px 20px;border-radius:14px;">
+              <p style="font-size:.8rem;font-weight:600;color:var(--af-blue);letter-spacing:.1em;text-transform:uppercase;margin-bottom:7px;">Exit Examination</p>
+              <p style="font-size:.85rem;color:var(--text-secondary);line-height:1.65;font-weight:300;">JHS 3 students sit the <strong style="color:var(--text-primary);font-weight:500;">Basic Education Certificate Examination (BECE)</strong>, conducted by the West African Examinations Council (WAEC), qualifying them for Senior High School entry.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
-  </footer>
+  </section>
+
+</div>
+
+<div class="page" id="page-gallery">
+  <section class="gal-hero">
+    <div class="gal-hero-in">
+      <p class="ct-lbl">Moments & Memories</p>
+      <h1 class="gal-intro-title">Our Gallery</h1>
+      <p class="gal-intro">Explore the vibrant life, achievements and cherished moments that define the Asomdwee Ntonton Som School community.</p>
+    </div>
+  </section>
+
+  <section class="gal-body">
+    <div class="gal-body-in">
+      <p class="gal-intro-text">Every photograph in this gallery tells a story — of growth, joy, learning and community. From academic achievements to sporting triumphs, from spiritual gatherings to quiet moments of reflection, these images capture the essence of who we are. They showcase the dedication of our teachers, the brilliance of our students, and the warmth of a school family united in purpose. As you browse through these moments, you will see not just pictures, but the living proof of our commitment to nurturing young people who are knowledgeable, compassionate and grounded in faith. Each image is a testament to the belief that education, when rooted in love and guided by purpose, transforms lives.</p>
+      
+      <div class="gal-masonry" id="galleryGrid">
+        <!-- Gallery items will be populated here -->
+      </div>
+    </div>
+  </section>
+</div>
+
+<div class="modal" id="imageModal">
+  <div class="modal-content">
+    <img id="modalImage" src="" alt="Full screen image"/>
+    <button class="modal-close" onclick="closeModal()">&times;</button>
+  </div>
 </div>
 
 
@@ -613,48 +1052,44 @@ footer{padding:54px 48px 34px;background:var(--footer-bg);border-top:1px solid r
           <div class="ct-item"><div class="ct-ico"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M20 13V6a2 2 0 00-2-2H6a2 2 0 00-2 2v7m16 0v5a2 2 0 01-2 2H6a2 2 0 01-2-2v-5m16 0h-2.586a1 1 0 00-.707.293l-2.414 2.414a1 1 0 01-.707.293h-3.172a1 1 0 01-.707-.293l-2.414-2.414A1 1 0 006.586 13H4"/></svg></div><div><div class="ct-lbl2">Post Address</div><div class="ct-val">Asomdwee Ntonton Som School-Ghana<br/>P. O. Box 51, Gomoa Ankamu</div></div></div>
         </div>
       </div>
-
-      <div class="reveal">
-        <p class="sec-lbl center" style="margin-bottom:10px;">Find Us</p>
-        <h2 style="font-family:'Cormorant Garamond',serif;font-size:1.75rem;font-weight:300;color:var(--text-primary);margin-bottom:22px;text-align:center;">School Location</h2>
-        <div class="map-ph">
-          <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"/></svg>
-          <p>M223 Rose Hips St, Apam, Central Region, Ghana</p>
-          <p style="font-size:.74rem;color:var(--text-muted);"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d37326.77257783697!2d-0.7621385032883002!3d5.336879358477531!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfde375e84581f95%3A0x11d6275bc2a42728!2sM223%20Rose%20Hips%20St!5e0!3m2!1sen!2sgh!4v1776558903364!5m2!1sen!2sgh" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p>
-        </div>
+      <div class="map-ph">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1986.2909768234626!2d-0.7501154729711381!3d5.32770789838654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfde375e84581f95%3A0x11d6275bc2a42728!2sM223%20Rose%20Hips%20St!5e0!3m2!1sen!2sgh!4v1776862057250!5m2!1sen!2sgh" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
     </div>
   </section>
 
-  <footer>
-    <div class="ft-in">
-      <div class="ft-top">
-        <div class="ft-brand">
-          <div class="nav-brand" onclick="showPage('home')">
-            <div class="nav-logo"><img src="logo.jpg" alt="Logo"/></div>
-            <div class="nav-school-name" style="color:#fff;">Asomdwee Ntonton Som-School<span>Excellence · Peace · Progress</span></div>
-          </div>
-          <p>Rooted in faith, purpose and the pursuit of knowledge. Nurturing the next generation from Apam, Central Region, Ghana.</p>
-        </div>
-        <div class="ft-col">
-          <h4>Navigate</h4>
-          <a onclick="showPage('home')">Home</a>
-          <a onclick="showPage('about')">About Us</a>
-          <a onclick="showPage('contact')">Contact</a>
-        </div>
-        <div class="ft-col">
-          <h4>Reach Us</h4>
-          <a href="tel:+233243444864">+233 24 344 4864</a>
-          <a href="tel:+233242556318">+233 24 255 6318</a>
-          <a href="mailto:esselkhadis@gmail.com">esselkhadis@gmail.com</a>
-          <a>Apam, Central Region, Ghana</a>
-        </div>
-      </div>
-      <div class="ft-btm"><span>© 2026 Asomdwee Ntonton Som-School. All rights reserved.</span><span>Nyimdzepa Fir Kan</span></div>
-    </div>
-  </footer>
+  </div>
 </div>
 
+<footer>
+  <div class="ft-in">
+    <div class="ft-top">
+      <div class="ft-brand">
+        <div class="nav-brand" onclick="showPage('home')">
+          <div class="nav-logo"><img src="pics/logo.jpg" alt="Logo"/></div>
+          <div class="nav-school-name" style="color:#fff;">Asomdwee Ntonton Som School<span>Excellence · Peace · Progress</span></div>
+        </div>
+        <p>Rooted in faith, purpose and the pursuit of knowledge. Nurturing the next generation of leaders from Apam, Central Region, Ghana.</p>
+      </div>
+      <div class="ft-col">
+        <h4>Navigate</h4>
+        <a onclick="showPage('home')">Home</a>
+        <a onclick="showPage('about')">About Us</a>
+        <a onclick="showPage('academics')">Academics</a>
+        <a onclick="showPage('gallery')">Gallery</a>
+        <a onclick="showPage('contact')">Contact</a>
+      </div>
+      <div class="ft-col">
+        <h4>Reach Us</h4>
+        <a href="tel:+233243444864">+233 24 344 4864</a>
+        <a href="tel:+233242556318">+233 24 255 6318</a>
+        <a href="mailto:esselkhadis@gmail.com">esselkhadis@gmail.com</a>
+        <a>Apam, Central Region, Ghana</a>
+      </div>
+    </div>
+    <div class="ft-btm"><span>© 2026 Asomdwee Ntonton Som School. All rights reserved.</span><span>Nyimdzepa Fir Kan</span></div>
+  </div>
+</footer>
 
 <script>
 // PAGE NAV
@@ -663,7 +1098,7 @@ function showPage(n){
   const pg=document.getElementById('page-'+n);if(!pg)return;
   pg.style.display='block';
   requestAnimationFrame(()=>requestAnimationFrame(()=>{pg.style.opacity='1';pg.style.transform='translateY(0)';pg.classList.add('active');}));
-  window.scrollTo({top:0,behavior:'smooth'});
+  window.scrollTo({top:0,behavior:'instant'});
   document.querySelectorAll('.nav-link,.mob-link').forEach(l=>l.classList.toggle('active',l.dataset.page===n));
   setTimeout(triggerReveal,200);
 }
@@ -694,6 +1129,42 @@ function triggerReveal(){
   document.querySelectorAll('.reveal:not(.visible)').forEach(el=>obs.observe(el));
 }
 
+// GALLERY
+function initGallery(){
+  const grid=document.getElementById('galleryGrid');
+  if(!grid)return;
+  const images=[
+    'pics/pic44.jpg','pics/pic27.jpg','pics/pic28.jpg','pics/pic29.jpg','pics/pic5.jpg','pics/pic6.jpg',
+    'pics/pic7.jpg','pics/pic8.jpg','pics/logo.jpg','pics/pic10.jpg','pics/pic11.jpg','pics/pic12.jpg',
+    'pics/pic13.jpg','pics/pic14.jpg','pics/pic15.jpg','pics/pic16.jpg','pics/pic17.jpg','pics/pic18.jpg',
+    'pics/pic19.jpg','pics/pic20.jpg','pics/pic21.jpg','pics/pic22.jpg','pics/pic23.jpg','pics/pic24.jpg','pics/kk.jpg','pics/kofi1.jpg','pics/pic42.jpg'
+  ];
+  grid.innerHTML=images.map((img,i)=>`<div class="gal-item" onclick="openModal('${img}')"><img src="${img}" alt="Gallery image ${i+1}"/></div>`).join('');
+}
+
+function openModal(src){
+  const modal=document.getElementById('imageModal');
+  const img=document.getElementById('modalImage');
+  img.style.opacity='0';
+  img.style.transform='scale(0.92)';
+  img.src=src;
+  modal.classList.add('active');
+  document.body.style.overflow='hidden';
+  img.onload=()=>{
+    img.style.transition='opacity .3s ease, transform .3s ease';
+    img.style.opacity='1';
+    img.style.transform='scale(1)';
+  };
+}
+
+function closeModal(){
+  document.getElementById('imageModal').classList.remove('active');
+  document.body.style.overflow='';
+}
+
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeModal();});
+document.getElementById('imageModal').addEventListener('click',function(e){if(e.target===this)closeModal();});
+
 // NAV SCROLL
 window.addEventListener('scroll',()=>document.getElementById('navbar').classList.toggle('scrolled',window.scrollY>34));
 
@@ -704,6 +1175,7 @@ function toggleMenu(){document.getElementById('ham').classList.toggle('open');do
 document.addEventListener('DOMContentLoaded',()=>{
   const h=document.getElementById('page-home');h.style.opacity='1';h.style.transform='translateY(0)';
   buildSS(document.getElementById('hero-ss'),document.getElementById('heroDots'),5000);
+  initGallery();
   triggerReveal();
 });
 </script>

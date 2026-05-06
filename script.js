@@ -86,10 +86,8 @@ const galleryImages=[
   {src:'pics/staff2.jpg', cat:'staff'},
   {src:'pics/teach.jpg',  cat:'staff'},
   {src:'pics/teach1.jpg',  cat:'staff'},
-  {src:'pics/teach2.jpg',  cat:'staff'},
   {src:'pics/teach3.jpg',  cat:'staff'},
   {src:'pics/opoku1.jpg',  cat:'staff'},
-  {src:'pics/opoku2.jpg',  cat:'staff'},
 ];
 
 let currentList = [];

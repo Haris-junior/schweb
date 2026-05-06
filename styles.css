@@ -87,7 +87,8 @@ nav.scrolled{background:var(--nav-bg-scrolled);}
   .hero .slide.d3{background-image:url('pics/KOF.JPG');}
   .hero .slide.d4{background-image:url('pics/opoku.JPG');}
   .hero .slide.d5{background-image:url('pics/kk.jpg');}
-  .hero .slide.d6,.hero .slide.d7,.hero .slide.d8,
+  .hero .slide.d6{background-image: url('pics/opoku2.jpg');}
+  .hero .slide.d7,.hero .slide.d8,
   .hero .slide.d9,.hero .slide.d10,.hero .slide.d11,
   .hero .slide.d12{display:none;}
 }

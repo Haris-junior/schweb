@@ -91,12 +91,27 @@ const galleryImages=[
 ];
 
 let currentList = [];
+let currentGalleryList = [];
 let currentModalIndex = -1;
+const boysDormImages = [
+  {src:'pics/boys_d.jpg'},
+  {src:'boys_dorm2.jpg'},
+  {src:'boys_dorm3.jpg'},
+  {src:'boys_dorm4.jpg'},
+];
+
+const girlsDormImages = [
+  {src:'pics/girls_d.jpg'},
+  {src:'girls_dorm2.jpg'},
+  {src:'girls_dorm3.jpg'},
+  {src:'girls_dorm4.jpg'},
+];
 function renderGallery(cat){
   const grid=document.getElementById('galleryGrid');
   if(!grid)return;
   const list=cat==='all'?galleryImages:galleryImages.filter(img=>img.cat===cat);
   currentList=list;
+  currentGalleryList = list
   grid.innerHTML=list.map((img,i)=>`<div class="gal-item" onclick="openModal(${i})"><img src="${img.src}" alt="Gallery image ${i+1}"/></div>`).join('');
 }
 
@@ -110,27 +125,39 @@ function initGallery(){
   renderGallery('all');
 }
 
-function openModal(index){
-  currentModalIndex = index;
-  const modal=document.getElementById('imageModal');
-  const img=document.getElementById('modalImage');
-  img.style.opacity='0';
-  img.style.transform='scale(0.92)';
-  img.src=currentList[index].src;
+function openModal(indexOrSrc){
+  const modal = document.getElementById('imageModal');
+  const img = document.getElementById('modalImage');
+  img.style.opacity = '0';
+  img.style.transform = 'scale(0.92)';
+
+  if(typeof indexOrSrc === 'number'){
+  currentList = currentGalleryList;
+  currentModalIndex = indexOrSrc;
+  img.src = currentList[indexOrSrc].src;
+  document.querySelector('.modal-prev').style.display = 'flex';
+  document.querySelector('.modal-next').style.display = 'flex';
+} else {
+  currentModalIndex = -1;
+  img.src = indexOrSrc;
+  document.querySelector('.modal-prev').style.display = 'none';
+  document.querySelector('.modal-next').style.display = 'none';
+}
+
   modal.classList.add('active');
-  document.body.style.overflow='hidden';
-  img.onload=()=>{
-    img.style.transition='opacity .3s ease, transform .3s ease';
-    img.style.opacity='1';
-    img.style.transform='scale(1)';
+  document.body.style.overflow = 'hidden';
+  img.onload = ()=>{
+    img.style.transition = 'opacity .3s ease, transform .3s ease';
+    img.style.opacity = '1';
+    img.style.transform = 'scale(1)';
   };
 }
 
 function navigateModal(direction){
-  const modal=document.getElementById('imageModal');
-  if(!modal.classList.contains('active'))return;
-  // Calculate the new index, wrapping around at the ends
-  currentModalIndex=(currentModalIndex + direction + currentList.length) % currentList.length;
+  const modal = document.getElementById('imageModal');
+  if(!modal.classList.contains('active')) return;
+  if(currentModalIndex === -1) return;
+  currentModalIndex = (currentModalIndex + direction + currentList.length) % currentList.length;
   openModal(currentModalIndex);
 }
 

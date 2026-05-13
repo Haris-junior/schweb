@@ -89,6 +89,8 @@ const galleryImages=[
   {src:'pics/opoku1.jpg',  cat:'staff'},
   {src:'pics/boys_d.jpg',   cat:'facilities'},
   {src:'pics/girls_d.jpg',   cat:'facilities'},
+  {src:'pics/aunty-adjoa.jpg',  cat:'staff'},
+  {src:'pics/mosey.jpg',  cat:'staff'},
 ];
 
 let currentList = [];
@@ -160,6 +162,24 @@ function navigateModal(direction){
   if(currentModalIndex === -1) return;
   currentModalIndex = (currentModalIndex + direction + currentList.length) % currentList.length;
   openModal(currentModalIndex);
+}
+
+function animateCounters() {
+  document.querySelectorAll('.glance-num').forEach(el => {
+    const raw = el.textContent.trim();
+    const num = parseInt(raw); // extract the number
+    if (isNaN(num)) return;    // skip non-numeric ones like "GES"
+    const suffix = raw.replace(/[0-9]/g, ''); // e.g. "+" sign
+    let start = 0;
+    const duration = 1800;
+    const step = (timestamp) => {
+      if (!start) start = timestamp;
+      const progress = Math.min((timestamp - start) / duration, 1);
+      el.textContent = Math.floor(progress * num) + suffix;
+      if (progress < 1) requestAnimationFrame(step);
+    };
+    requestAnimationFrame(step);
+  });
 }
 
 function closeModal(){

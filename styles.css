@@ -393,7 +393,7 @@ footer::before{content:'';position:absolute;inset:0;background:radial-gradient(c
   nav{padding:0 32px;}
   .h-about-grid{grid-template-columns:1fr;}
   .glance-grid{grid-template-columns:repeat(2,1fr);}
-  .founder-grid{grid-template-columns: 1fr 2fr;}
+  .founder-grid{grid-template-columns:1fr 2fr;}
   .pillars-grid{grid-template-columns:repeat(3,1fr);}
   .vals-grid{grid-template-columns:repeat(2,1fr);}
   .rel-pills{grid-template-columns:1fr;}

@@ -91,6 +91,7 @@ const galleryImages=[
   {src:'pics/girls_d.jpg',   cat:'facilities'},
   {src:'pics/aunty-adjoa.jpg',  cat:'staff'},
   {src:'pics/mosey.jpg',  cat:'staff'},
+  {src:'pics/uncle_kojo.jpg',  cat:'staff'},
 ];
 
 let currentList = [];
@@ -164,24 +165,25 @@ function navigateModal(direction){
   openModal(currentModalIndex);
 }
 
-function animateCounters() {
-  document.querySelectorAll('.glance-num').forEach(el => {
-    const raw = el.textContent.trim();
-    const num = parseInt(raw); // extract the number
-    if (isNaN(num)) return;    // skip non-numeric ones like "GES"
-    const suffix = raw.replace(/[0-9]/g, ''); // e.g. "+" sign
+function animateCounters(){
+  document.querySelectorAll('.glance-num').forEach(el=>{
+    const raw = el.getAttribute('data-val') || el.textContent.trim();
+    el.setAttribute('data-val', raw); // save original value
+    const num = parseInt(raw);
+    if(isNaN(num)) return; // skip GES, Apam etc.
+    const suffix = raw.replace(/[0-9]/g,'');
     let start = 0;
     const duration = 1800;
-    const step = (timestamp) => {
-      if (!start) start = timestamp;
+    const step = (timestamp)=>{
+      if(!start) start = timestamp;
       const progress = Math.min((timestamp - start) / duration, 1);
       el.textContent = Math.floor(progress * num) + suffix;
-      if (progress < 1) requestAnimationFrame(step);
+      if(progress < 1) requestAnimationFrame(step);
+      else el.textContent = num + suffix; // ensure it lands on exact number
     };
     requestAnimationFrame(step);
   });
 }
-
 function closeModal(){
   document.getElementById('imageModal').classList.remove('active');
   document.body.style.overflow='';
@@ -215,4 +217,18 @@ document.addEventListener('DOMContentLoaded',()=>{
   buildSS(document.getElementById('hero-ss'),document.getElementById('heroDots'),5000);
   initGallery();
   triggerReveal();
+
+  // Trigger counter animation when glance section scrolls into view
+  const glanceGrid = document.querySelector('.glance-grid');
+  if(glanceGrid){
+    const counterObs = new IntersectionObserver((entries)=>{
+      entries.forEach(entry=>{
+        if(entry.isIntersecting){
+          animateCounters();
+          counterObs.unobserve(entry.target); // run only once
+        }
+      });
+    }, {threshold: 0.3});
+    counterObs.observe(glanceGrid);
+  }
 });

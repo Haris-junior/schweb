@@ -43,7 +43,7 @@ const galleryImages=[
   {src:'pics/pic29.jpg',  cat:'events'},
   {src:'pics/pic5.jpg',   cat:'staff'},
   {src:'pics/pic6.jpg',   cat:'events'},
-  {src:'pics/pic7.jpg',   cat:'staff'},
+  {src:'pics/fiifi.jpg',   cat:'staff'},
   {src:'pics/pic8.jpg',   cat:'students'},
   {src:'pics/pic10.jpg',  cat:'students'},
   {src:'pics/pic11.jpg',  cat:'students'},

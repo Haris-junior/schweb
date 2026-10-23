@@ -161,7 +161,7 @@ footer::before{content:'';position:absolute;inset:0;background:radial-gradient(c
 .ft-btm{padding-top:32px;border-top:1px solid var(--divider);display:flex;align-items:center;justify-content:space-between;font-size:.78rem;color:var(--text-muted);font-weight:300;}
 
 /* ABOUT HERO */
-.ab-hero{min-height:100vh;padding-top:76px;background:linear-gradient(rgba(10,15,20,0.6), rgba(10,15,20,0.6)), url('pics/sch2.png') top center/cover fixed no-repeat;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;position:relative;overflow:hidden;}
+.ab-hero{min-height:100vh;padding-top:76px;background:linear-gradient(rgba(10,15,20,0.6), rgba(10,15,20,0.6)), url('/pics/sch2.png') top center/cover fixed no-repeat;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;position:relative;overflow:hidden;}
 .ab-hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 20% 60%,rgba(93,138,168,.12) 0%,transparent 55%),radial-gradient(ellipse at 80% 30%,rgba(93,138,168,.08) 0%,transparent 45%);}
 .ab-hero::after{content:'';position:absolute;inset:0;background-image:linear-gradient(rgba(93,138,168,.03) 1px,transparent 1px),linear-gradient(90deg,rgba(93,138,168,.03) 1px,transparent 1px);background-size:55px 55px;}
 .ab-hero-in{position:relative;z-index:2;padding:60px 48px;max-width:880px;}

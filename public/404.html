@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8"/>
+  <script>
+    // Redirect all 404s back to the SPA, preserving the path for React Router
+    const path = window.location.pathname + window.location.search + window.location.hash;
+    window.location.replace('/?redirect=' + encodeURIComponent(path));
+  </script>
+</head>
+<body></body>
+</html>
+
